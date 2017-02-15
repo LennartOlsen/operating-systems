@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		704DF5191E43183100807AB2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 704DF5181E43183100807AB2 /* main.c */; };
+		70A457701E48F72500D06DBF /* linked-list.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A4576F1E48F72500D06DBF /* linked-list.c */; };
+		70A457731E491E3A00D06DBF /* list-elem.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A457711E491E3A00D06DBF /* list-elem.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		701EA1271E48577C00B4FDBC /* linked-list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "linked-list.h"; path = "lists/linked-list.h"; sourceTree = "<group>"; };
 		704DF5151E43183100807AB2 /* operatingsystems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = operatingsystems; sourceTree = BUILT_PRODUCTS_DIR; };
 		704DF5181E43183100807AB2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		70A4576F1E48F72500D06DBF /* linked-list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "linked-list.c"; path = "lists/linked-list.c"; sourceTree = "<group>"; };
+		70A457711E491E3A00D06DBF /* list-elem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "list-elem.c"; path = "lists/list-elem.c"; sourceTree = "<group>"; };
+		70A457721E491E3A00D06DBF /* list-elem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "list-elem.h"; path = "lists/list-elem.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		701EA1261E48574C00B4FDBC /* lists */ = {
+			isa = PBXGroup;
+			children = (
+				701EA1271E48577C00B4FDBC /* linked-list.h */,
+				70A4576F1E48F72500D06DBF /* linked-list.c */,
+				70A457711E491E3A00D06DBF /* list-elem.c */,
+				70A457721E491E3A00D06DBF /* list-elem.h */,
+			);
+			name = lists;
+			sourceTree = "<group>";
+		};
 		704DF50C1E43183100807AB2 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +74,7 @@
 		704DF5171E43183100807AB2 /* operatingsystems */ = {
 			isa = PBXGroup;
 			children = (
+				701EA1261E48574C00B4FDBC /* lists */,
 				704DF5181E43183100807AB2 /* main.c */,
 			);
 			path = operatingsystems;
@@ -119,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A457701E48F72500D06DBF /* linked-list.c in Sources */,
 				704DF5191E43183100807AB2 /* main.c in Sources */,
+				70A457731E491E3A00D06DBF /* list-elem.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +236,7 @@
 		704DF51D1E43183100807AB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +244,7 @@
 		704DF51E1E43183100807AB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +268,7 @@
 				704DF51E1E43183100807AB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
